@@ -1,0 +1,25 @@
+services:
+  frontend:
+    restart: always
+    build: .
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    command: sh -c 'pnpm dev'
+    ports:
+      - "${PORT:-3000}:3000"
+
+  lint:
+    build: .
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    command: sh -c 'pnpm lint'
+
+  test:
+    build: .
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    command: sh -c 'pnpm jest --coverage'
+

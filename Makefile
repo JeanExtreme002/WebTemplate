@@ -8,7 +8,7 @@ run:  ## Run server
 
 .PHONY: install
 install:  ## Install dependencies
-	@pnpm install
+	@pnpm install --frozen-lockfile
 	@[ -f .env ] || cp .env.sample .env
 
 .PHONY: lint

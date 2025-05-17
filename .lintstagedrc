@@ -1,4 +1,4 @@
 {
-  "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
-  ".github/**/*": "prettier --write --single-quote false"
+  "*.{js,ts,jsx,tsx}": ["eslint --cache --fix", "prettier --write"],
+  ".github/**/*": ["prettier --write"]
 }

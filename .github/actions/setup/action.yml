@@ -1,0 +1,24 @@
+name: Setup
+description: Setup Node, dependencies, caching, etc.
+inputs:
+  node-version-file:
+    description: Node.js file containing version to use
+    required: false
+    default: .tool-versions
+runs:
+  using: composite
+  steps:
+    - name: Install PNPM
+      uses: pnpm/action-setup@v4
+      with:
+        version: 8.10.2
+
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version-file: ${{inputs.node-version-file}}
+        cache: 'pnpm'
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm i --frozen-lockfile

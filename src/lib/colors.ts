@@ -1,4 +1,4 @@
 export const BusinessColors = {
-    WHITE: "#FFFFFF",
-    BLACK: "#000000"
+  WHITE: '#FFFFFF',
+  BLACK: '#000000',
 };

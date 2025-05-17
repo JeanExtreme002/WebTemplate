@@ -1,11 +1,12 @@
 @font-face {
-    font-family: 'LinearGrotesk-Black';
-    src: url('/fonts/linear-grotesk/LinearGrotesk-Black.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LinearGrotesk-Black';
+  src: url('/fonts/linear-grotesk/LinearGrotesk-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-html, body {
-    margin: 0;
-    width: 100%;
+html,
+body {
+  margin: 0;
+  width: 100%;
 }

@@ -1,20 +1,18 @@
-import { Flex } from "@radix-ui/themes";
+import { Flex } from '@radix-ui/themes';
 
-import { NavBar } from "@/components";
+import { NavBar } from '@/components';
 
-import styles from "./home.module.css";
-
+import styles from './home.module.css';
 
 export function HomePage() {
   return (
     <>
-      <section id="home">
-        <NavBar/>
+      <section id='home'>
+        <NavBar />
       </section>
 
-      <main className={ styles.root }>
-        <Flex direction="row" gap="9">
-        </Flex>
+      <main className={styles.root}>
+        <Flex direction='row' gap='9'></Flex>
       </main>
     </>
   );

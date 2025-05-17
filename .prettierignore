@@ -3,5 +3,6 @@
 *.md
 *.swcrc
 pnpm-lock.yaml
-/dist
+/build
 /coverage
+/dist

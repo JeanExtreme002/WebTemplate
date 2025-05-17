@@ -1,11 +1,11 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen } from '@testing-library/react';
 
-import { BusinessLogo } from "./business-logo";
+import { BusinessLogo } from './business-logo';
 
-describe("<BusinessLogo />", () => {
-  it("should render an image", () => {
+describe('<BusinessLogo />', () => {
+  it('should render an image', () => {
     render(<BusinessLogo />);
 
-    expect(screen.getByRole("img")).toBeInTheDocument();
+    expect(screen.getByRole('img')).toBeInTheDocument();
   });
 });

@@ -1,1 +1,1 @@
-export * from './business-logo'
+export * from './business-logo';

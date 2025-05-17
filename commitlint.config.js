@@ -1,11 +1,5 @@
 function getScopes() {
-  return [
-    "core",
-    "github",
-    "components",
-    "lib",
-    "pages",
-  ];
+  return ['core', 'github', 'components', 'lib', 'pages'];
 }
 
 const scopes = getScopes();
